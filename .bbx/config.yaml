@@ -1,0 +1,16 @@
+runners:
+ AWS-runner:
+  image: ubuntu-generic
+
+jobs:   
+ hello-world:
+  runner: AWS-runner
+  steps:
+   - run:
+      name: Say Hello World
+      command: echo "Hello World"
+      
+workflows:
+ hello-world-workflow:
+  jobs:
+   - hello-world
