@@ -5,6 +5,9 @@ runners:
 jobs:   
  hello-world:
   runner: AWS-runner
+  output:
+   artifact:
+    - hello.txt  
   steps:
    - run:
       name: Say Hello World
