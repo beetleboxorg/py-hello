@@ -7,7 +7,7 @@ jobs:
   runner: AWS-runner
   output:
    artifact:
-    - hello.txt  
+    - /root/hello.txt  
   steps:
    - run:
       name: Say Hello World
