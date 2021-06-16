@@ -5,7 +5,7 @@ runners:
 jobs:   
  hello-world:
   runner: AWS-runner
-  current_active_directory: ~/
+  current_working_directory: ~/
   output:
    artifact:
     - hello.txt  
