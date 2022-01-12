@@ -13,9 +13,9 @@ jobs:
    - run:
       name: Say Hello World
       command: echo "Hello World" 
+   - run:
       name: Text Hello World
-      command: echo "Hello World" > hello.txt
-      
+      command: echo "Hello World" > hello.txt      
       
 workflows:
  hello-world-workflow:
