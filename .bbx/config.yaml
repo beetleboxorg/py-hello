@@ -4,7 +4,7 @@ runners:
 
 jobs:   
  hello-world:
-  resource_spec: large
+  resource_spec: small
   runner: AWS-runner
   current_working_directory: ~/
   output:
