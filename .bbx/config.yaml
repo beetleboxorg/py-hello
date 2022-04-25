@@ -1,6 +1,6 @@
 runners:
  AWS-runner:
-  image: 778074049624.dkr.ecr.us-east-1.amazonaws.com/ubuntu-generic
+  image: localhost:5000/ubuntu-generic
 
 jobs:   
  hello-world:
