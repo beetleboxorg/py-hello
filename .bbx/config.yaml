@@ -1,6 +1,6 @@
 runners:
  AWS-runner:
-  image: localhost:5000/ubuntu-generic
+  image: localhost:5000/centos-generic
 
 jobs:   
  hello-world:
