@@ -1,6 +1,6 @@
 runners:
  AWS-runner:
-  image: ip-192-168-102-216:5000/ubuntu-genericpppp
+  image: ip-192-168-102-216:5000/ubuntu-generic
 
 jobs:   
  hello-world:
