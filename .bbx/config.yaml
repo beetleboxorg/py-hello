@@ -19,5 +19,8 @@ jobs:
       
 workflows:
  hello-world-workflow:
+  triggers:
+   - manual 
+   - push
   jobs:
    - hello-world
