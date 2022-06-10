@@ -21,7 +21,5 @@ workflows:
  hello-world-workflow:
   triggers:
    - manual 
-   - schedule:
-      cron: "31 12 * * *"   
   jobs:
    - hello-world
