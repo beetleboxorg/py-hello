@@ -22,7 +22,7 @@ workflows:
   triggers:
    - manual 
    - schedule:
-      cron: "31 12 * * *"         
+      cron: "27 16 * * *"         
   jobs:
    - hello-world
    
