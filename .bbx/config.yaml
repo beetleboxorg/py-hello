@@ -18,7 +18,7 @@ jobs:
       command: echo "Hello World" > hello.txt    
    - run:
       name: fail
-      command: ekho "cheese"
+      command: echo "cheese"
 
       
 workflows:
