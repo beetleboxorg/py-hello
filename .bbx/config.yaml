@@ -1,6 +1,6 @@
 runners:
  AWS-runner:
-  image: public.ecr.aws/y2s4f3y9/ubuntu-generic:latest
+  image: work1-virtualbox:5000/ubuntu-vitis-2020-1
 
 jobs:   
  hello-world:
