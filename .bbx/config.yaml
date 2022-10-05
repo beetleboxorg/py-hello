@@ -31,6 +31,7 @@ workflows:
  hello-world-workflow:
   triggers:
    - manual 
+   - push
    - schedule:
       cron: "25 09 * * *"    
   jobs:
