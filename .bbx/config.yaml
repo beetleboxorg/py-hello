@@ -31,7 +31,7 @@ workflows:
   triggers:
    - manual 
    - schedule:
-      cron: "12 11 * * *"    
+      cron: "30 15 * * *"    
   jobs:
    - hello-world
    
