@@ -11,7 +11,7 @@ jobs:
     - hello.txt  
   steps:
    - run:
-      name: Ping
+      name: Install software
       command: |
        apt-get update -y
        apt-get install iputils-ping -y
