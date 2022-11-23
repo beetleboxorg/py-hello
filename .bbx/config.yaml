@@ -1,6 +1,6 @@
 runners:
- AWS-runner:
-  image: work1-virtualbox:5000/ubuntu-vitis-2020-1
+ AWS-runner: 
+  image: work1-virtualbox:5000/ubuntu-generic
 
 jobs:   
  hello-world:
