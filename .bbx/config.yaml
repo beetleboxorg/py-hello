@@ -3,7 +3,7 @@ runners:
   image: public.ecr.aws/y2s4f3y9/ubuntu-generic
 jobs:   
  hello-world:
-  resource_spec: micro
+  resource_spec: large
   runner: AWS-runner
   current_working_directory: ~/
   output:
