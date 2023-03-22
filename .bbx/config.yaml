@@ -23,7 +23,7 @@ jobs:
       command: echo "Hello World" > hello.txt    
    - run:
       name: fail
-      command: echo "cheese"
+      command: echo "cheeeeeeese"
 
       
 workflows:
@@ -34,4 +34,3 @@ workflows:
       cron: "32 09 * * *"    
   jobs:
    - hello-world
-   
