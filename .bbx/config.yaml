@@ -23,7 +23,7 @@ jobs:
       command: echo "Hello World" > hello.txt    
    - run:
       name: fail
-      command: echo hello123!"
+      command: echo boo!"
 
       
 workflows:
