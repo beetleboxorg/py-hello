@@ -1,6 +1,6 @@
 runners:
  AWS-runner:
-  image: 192.168.1.88:5000/ubuntu-generic
+  image: 10.0.1.35:5000/ubuntu-generic
 jobs:   
  hello-world:
   resource_spec: micro
