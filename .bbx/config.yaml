@@ -1,6 +1,6 @@
 runners:
  AWS-runner:
-  image: stag:5000/ubuntu-generic
+  image: stag.beetlebox.org:5000/ubuntu-generic
 jobs:   
  hello-world:
   resource_spec: micro
