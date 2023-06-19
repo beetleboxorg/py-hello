@@ -6,6 +6,9 @@ jobs:
   resource_spec: micro
   runner: AWS-runner
   current_working_directory: ~/
+  input: 
+   artifact: 
+    - test.txt
   output:
    artifact:
     - hello.txt  
