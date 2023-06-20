@@ -9,7 +9,6 @@ jobs:
   input: 
    artifact: 
     - test.txt
-    - hello-world_34.tar.gz
 
   output:
    artifact:
