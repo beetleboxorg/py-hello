@@ -6,9 +6,7 @@ jobs:
   resource_spec: micro
   runner: AWS-runner
   current_working_directory: ~/
-  input: 
-   artifact: 
-    - test.txt
+
 
   output:
    artifact:
@@ -29,31 +27,6 @@ jobs:
       name: fail
       command: echo "ffffffffffff!"
 
- hello-world2:
-  resource_spec: micro
-  runner: AWS-runner
-  current_working_directory: ~/
-  depends:
-   - hello-world   
-  input: 
-   artifact: 
-    - hello-world
-  steps:
-   - run:
-      name: Install software
-      command: |
-       apt-get update -y
-       apt-get install iputils-ping -y
-   - run:
-      name: Say Hello World
-      command: echo "Hello World" 
-   - run:
-      name: Text Hello World
-      command: echo "Hello World" > hello.txt    
-   - run:
-      name: fail
-      command: echo "ffffffffffff!"      
-
       
 workflows:
  hello-world-workflow:
@@ -61,4 +34,3 @@ workflows:
    - manual 
   jobs:
    - hello-world
-   - hello-world2   
