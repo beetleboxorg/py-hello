@@ -59,6 +59,6 @@ workflows:
  hello-world-workflow:
   triggers:
    - manual 
-    jobs:
+  jobs:
    - hello-world
    - hello-world2
