@@ -11,6 +11,7 @@ jobs:
       name: Setup Environment
       command: |
        echo $HELLO_WORLD
+       echo "Test test"
       env:
        HELLO_WOLD : hello world
        foo : bar
