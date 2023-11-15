@@ -13,6 +13,8 @@ jobs:
    - run:
       name: Install software
       command: |
+       echo $(pwd)
+       ls -a
        apt-get update -y
        apt-get install iputils-ping -y
    - run:
