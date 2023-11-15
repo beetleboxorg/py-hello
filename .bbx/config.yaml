@@ -15,6 +15,9 @@ jobs:
       command: |
        echo $(pwd)
        ls -a
+       cd /tmp
+       ls -a
+       tar -xzf *.tar.gz
        apt-get update -y
        apt-get install iputils-ping -y
    - run:
