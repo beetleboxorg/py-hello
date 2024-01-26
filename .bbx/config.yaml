@@ -15,6 +15,7 @@ jobs:
       name: Install software
       command: |
 
+       aaaa
        echo $(pwd)
        ls -a
        cd /tmp
