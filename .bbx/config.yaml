@@ -17,7 +17,6 @@ jobs:
 
 
 
-
        echo $(pwd)
        ls -a
        cd /tmp
