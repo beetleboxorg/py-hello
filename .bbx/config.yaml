@@ -8,7 +8,7 @@ runners:
 
 # Define a job to be performed during a workflow
 jobs:   
- hello-worl\td:
+ hello-worl\ktd:
   # Specify the runner used to perform this job
   runner: ubuntu-runner
 
@@ -16,10 +16,10 @@ jobs:
   steps:
    - run:
       name: Say Hello \ \n World
-      command: echo \ \t "Hello World" 
+      command: echo \ \k "Hello World" 
 
 # Define a workflow to orchestrate a job
 workflows:
  hello-world-workflow:
   jobs:
-   - hello-worl\td
+   - hello-worl\ktd
