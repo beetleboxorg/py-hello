@@ -8,7 +8,7 @@ runners:
 
 # Define a job to be performed during a workflow
 jobs:   
- hello-world:
+ hello-worl\nd:
   # Specify the runner used to perform this job
   runner: ubuntu-runner
 
@@ -22,4 +22,4 @@ jobs:
 workflows:
  hello-world-workflow:
   jobs:
-   - hello-world
+   - hello-worl\nd
