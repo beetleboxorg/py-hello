@@ -8,18 +8,18 @@ runners:
 
 # Define a job to be performed during a workflow
 jobs:   
- hello-worl\\\nd:
+ hello-worl\td:
   # Specify the runner used to perform this job
   runner: ubuntu-runner
 
   # Define one or more steps to execute commands as part of the job
   steps:
    - run:
-      name: Say Hello World
-      command: echo "Hello World" 
+      name: Say Hello \ \n World
+      command: echo \ \t "Hello World" 
 
 # Define a workflow to orchestrate a job
 workflows:
  hello-world-workflow:
   jobs:
-   - hello-worl\\\nd
+   - hello-worl\td
