@@ -7,7 +7,7 @@ jobs:
   resource_spec: micro
   runner: AWS-runner
   node_selector: 
-   stag
+   kubernetes.io/hostname:stag
   current_working_directory: ~/
   output:
    artifact:
