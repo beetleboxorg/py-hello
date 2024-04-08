@@ -6,8 +6,8 @@ jobs:
  hello-world:
   resource_spec: micro
   runner: AWS-runner
-  node_selector: 
-   kubernetes.io/hostname: stag
+
+  
   current_working_directory: ~/
   output:
    artifact:
