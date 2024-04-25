@@ -40,8 +40,9 @@ jobs:
    - run:
       name: Null character
       command: |
-        VAR1=`echo -ne "n\0m\0k" | xxd -p | tr -d '\n'`
-        echo -ne "$VAR1" | xxd -r -p | od -c
+        echo -e "This is a null character: \0 "
+
+        echo -e "This is a null character: \0 "  | cat --show-nonprinting
       
    - run:
       name: Replacement character
