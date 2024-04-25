@@ -37,6 +37,37 @@ jobs:
       name: fail
       command: echo "ffffffffffff!"
    - run:
+      name: Arabic 
+      command: echo "؛ ؟ ء آ أ ؤ إ ئ ا ب ة ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ـ ف ق ك ل م ن ه و ى ي ً ٌ ٍ َ ُ ِ ّ ْ ٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩ ٪ ٫ ٬ ٭ ٰ ٱ ٲ ٳ ٴ ٵ ٶ ٷ ٸ ٹ ٺ ٻ ټ ٽ پ ٿ ڀ ځ ڂ ڃ ڄ څ چ ڇ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ڑ ڒ ړ ڔ ڕ ږ ڗ ژ ڙ ښ ڛ ڜ ڝ ڞ ڟ ڠ ڡ ڢ ڣ ڤ ڥ ڦ ڧ ڨ ک ڪ ګ ڬ ڭ ڮ گ ڰ ڱ"
+
+   - run:
+      name: Accented Latin 
+      command: echo "Ā Á Ă À ā á ă à Ǖ Ǘ Ǚ Ǜ ǖ ǘ ǚ ǜ"
+   - run:
+      name: Accented Latin 
+      command: echo "Ā Á Ă À ā á ă à Ǖ Ǘ Ǚ Ǜ ǖ ǘ ǚ ǜ"
+   - run:
+      name: Chinese 
+      command: echo "我们刚才从图书馆来了"
+   - run:
+      name: Rare Chinese character
+      command: echo "𦮙"
+   - run:
+      name: Russian
+      command: echo "Я не говорю по-русски"
+   - run:
+      name: Greek
+      command: echo "Μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος"
+   - run:
+      name: Hebrew
+      command: echo "" אני לא לומד עברית "
+   - run:
+      name: Esperanto
+      command: echo "Ĉ ĉ Ĝ ĝ Ĥ ĥ Ĵ ĵ Ŝ ŝ Ŭ ŭ"
+   - run:
+      name: Hieroglyphics
+      command: echo "𓂝𓃀𓅡𓄿𓌂 𓋴𓅓𓏏𓇏𓇌𓀀"
+   - run:
       name: wait
       command: sleep 60     
       
