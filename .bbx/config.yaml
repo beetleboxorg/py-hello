@@ -37,6 +37,11 @@ jobs:
       name: fail
       command: echo "ffffffffffff!"
 
+
+   - run:
+      name: Null character UTF-16
+      command: echo "�"
+      
    - run:
       name: Basic Latin 
       command: |
