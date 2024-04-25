@@ -40,7 +40,7 @@ jobs:
    - run:
       name: Null character
       command: |
-        Python should detect the null character and replace it with a replacement character (\uFFFD) to avoid the following error: ValueError: A string literal cannot contain NUL (0x00) characters.
+        Python should detect the null character and replace it with a replacement character (\uFFFD) to avoid the following error, since postgres cannot store null characters: ValueError: A string literal cannot contain NUL (0x00) characters.
         
         echo -e "This is a null character: \0 "
 
