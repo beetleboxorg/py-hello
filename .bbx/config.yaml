@@ -131,7 +131,7 @@ jobs:
 
    - run:
       name: wait
-      command: sleep 300    
+      command: sleep 1    
       
 workflows:
  hello-world-workflow:
