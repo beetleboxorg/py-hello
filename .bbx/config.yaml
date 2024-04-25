@@ -37,9 +37,12 @@ jobs:
       name: fail
       command: echo "ffffffffffff!"
 
-
    - run:
-      name: Null character UTF-16
+      name: Null character
+      command: echo \0
+      
+   - run:
+      name: Replacement character
       command: echo "�"
       
    - run:
