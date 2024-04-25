@@ -19,14 +19,14 @@ jobs:
       command: |
 
        echo $(pwd)
-       ls -a
-       cd /tmp
-       ls -a
-       mkdir -p /root/artifact
-       cp workflow*.tar.gz /root/artifact
-       tar -xzf *.tar.gz
-       apt-get update -y
-       apt-get install iputils-ping -y
+       # ls -a
+       # cd /tmp
+       # ls -a
+       # mkdir -p /root/artifact
+       # cp workflow*.tar.gz /root/artifact
+       # tar -xzf *.tar.gz
+       # apt-get update -y
+       # apt-get install iputils-ping -y
    - run:
       name: Say Hello World
       command: echo "Hello World" 
@@ -39,7 +39,7 @@ jobs:
 
    - run:
       name: Basic Latin 
-      command: echo "!  # $ "
+      command: echo "! "
 
 
    - run:
