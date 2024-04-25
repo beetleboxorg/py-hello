@@ -44,7 +44,7 @@ jobs:
 
    - run:
       name: wait
-      command: sleep 60     
+      command: sleep 1     
       
 workflows:
  hello-world-workflow:
