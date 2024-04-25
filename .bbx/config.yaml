@@ -104,7 +104,7 @@ jobs:
       command: echo "Μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος"
    - run:
       name: Hebrew
-      command: echo "" אני לא לומד עברית "
+      command: echo " אני לא לומד עברית "
    - run:
       name: Esperanto
       command: echo "Ĉ ĉ Ĝ ĝ Ĥ ĥ Ĵ ĵ Ŝ ŝ Ŭ ŭ"
