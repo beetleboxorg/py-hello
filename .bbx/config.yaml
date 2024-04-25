@@ -39,13 +39,10 @@ jobs:
 
    - run:
       name: Null character
-      command: |
-        Python should detect the null character and replace it with a replacement character since postgres cannot store null characters
-        
+      command: |        
         echo -e "This is a null character: \0 "
 
-        echo -e "This is a null character: \0 "  | cat --show-nonprinting
-      
+        echo -e "This is a null character: \0 "  | cat --show-nonprinting      
    - run:
       name: Replacement character
       command: echo "�"
