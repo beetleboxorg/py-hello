@@ -39,7 +39,7 @@ jobs:
 
    - run:
       name: Basic Latin 
-      command: echo "! \# "
+      command: echo "#"
 
 
    - run:
