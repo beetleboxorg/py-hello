@@ -41,7 +41,7 @@ jobs:
       name: Basic Latin 
       command: |
         echo "Cannot print hash symbol with a space before it because bash interprets that as the end of the command and the start of a string"
-        echo "# ! $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 :  "
+        echo "# ! $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; "
 
 
    - run:
