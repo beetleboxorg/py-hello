@@ -39,7 +39,9 @@ jobs:
 
    - run:
       name: Null character
-      command: echo \0
+      command: |
+        VAR1=`echo -ne "n\0m\0k" | xxd -p | tr -d '\n'`
+        echo -ne "$VAR1" | xxd -r -p | od -c
       
    - run:
       name: Replacement character
