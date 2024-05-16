@@ -36,11 +36,11 @@ jobs:
       name: fail
       command: echo "ffffffffffff!"
 
-   # - run:
-   #    name: Null character
-   #    command: |
-   #      # Python should replace the null character with replacement character, since postgres cannot store null characters in a string
-   #      echo -e "This is a null character: \0 "
+   - run:
+      name: Null character
+      command: |
+        # Python should replace the null character with replacement character, since postgres cannot store null characters in a string
+        echo -e "This is a null character: \0 "
 
    #      echo -e "This is a null character: \0 "  | cat --show-nonprinting      
    # - run:
