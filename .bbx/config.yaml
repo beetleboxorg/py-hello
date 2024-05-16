@@ -18,12 +18,12 @@ jobs:
       command: |
 
        echo $(pwd)
-       # ls -a
-       # cd /tmp
-       # ls -a
-       # mkdir -p /root/artifact
-       # cp workflow*.tar.gz /root/artifact
-       # tar -xzf *.tar.gz
+       ls -a
+       cd /tmp
+       ls -a
+       mkdir -p /root/artifact
+       cp workflow*.tar.gz /root/artifact
+       tar -xzf *.tar.gz
        # apt-get update -y
        # apt-get install iputils-ping -y
    - run:
