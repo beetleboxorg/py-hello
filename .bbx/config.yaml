@@ -128,7 +128,19 @@ jobs:
 
    - run:
       name: wait
-      command: sleep 600    
+      command: sleep 10
+
+
+ hello-world:
+  resource_spec: micro
+  runner: AWS-runner
+  depends:
+   - hello-world
+  current_working_directory: ~/
+  steps:
+   - run:
+      name: Say Hello World
+      command: echo "Hello World"       
       
 workflows:
  hello-world-workflow:
@@ -138,3 +150,4 @@ workflows:
 
   jobs:
    - hello-world
+   - hello-world-2
