@@ -131,7 +131,7 @@ jobs:
       command: sleep 10
 
 
- hello-world:
+ hello-world-2:
   resource_spec: micro
   runner: AWS-runner
   depends:
