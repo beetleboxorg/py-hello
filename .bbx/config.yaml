@@ -128,7 +128,7 @@ jobs:
 
    - run:
       name: wait
-      command: sleep 10
+      command: sleep 600
 
 
  hello-world-2:
