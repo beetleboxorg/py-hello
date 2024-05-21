@@ -8,10 +8,10 @@ jobs:
   runner: AWS-runner
   
   current_working_directory: ~/
-  # output:
-  #  artifact:
-  #   - hello.txt  
-  #   - /root/artifact
+  output:
+   artifact:
+    - hello.txt  
+    - /root/artifact
   steps:
    - run:
       name: Install software
