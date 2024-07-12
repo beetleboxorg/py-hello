@@ -11,7 +11,7 @@ jobs:
   current_working_directory: ~/
   output:
    artifact:
-    - hello.txt  
+    - h*.txt  
     - /root/artifact
   steps:
    - run:
