@@ -11,9 +11,10 @@ jobs:
   current_working_directory: ~/
   output:
    artifact:
+    - non-existent-artifact.txt 
     - h* 
     - /root/artifact
-    - non-existent-artifact.txt 
+
 
   steps:
    - run:
