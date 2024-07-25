@@ -13,6 +13,8 @@ jobs:
    artifact:
     - h* 
     - /root/artifact
+    - non-existent-artifact.txt 
+
   steps:
    - run:
       name: Install software
