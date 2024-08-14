@@ -136,7 +136,7 @@ jobs:
 
 
  hello-world-2:
-  resource_spec: 2xlarge
+  resource_spec: micro
   runner: AWS-runner
   depends:
    - hello-world
@@ -146,6 +146,19 @@ jobs:
       name: Say Hello World
       command: echo "Hello World"       
 
+
+ hello-world-20:
+  resource_spec: large
+  runner: AWS-runner
+  depends:
+   - hello-world
+  current_working_directory: ~/
+  steps:
+   - run:
+      name: Wait
+      command: sleep 9999999     
+
+
  hello-world-3:
   resource_spec: 2xlarge
   runner: AWS-runner
@@ -154,11 +167,11 @@ jobs:
   current_working_directory: ~/
   steps:
    - run:
-      name: Say Hello World
-      command: echo "Hello World"      
+      name: Wait
+      command: sleep 9999999     
 
  hello-world-4:
-  resource_spec: 2xlarge
+  resource_spec: xlarge
   runner: AWS-runner
   depends:
    - hello-world
@@ -189,6 +202,7 @@ workflows:
   jobs:
    - hello-world
    - hello-world-2
+   - hello-world-20
    - hello-world-3
    - hello-world-4
    - hello-world-5
