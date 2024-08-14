@@ -145,7 +145,41 @@ jobs:
    - run:
       name: Say Hello World
       command: echo "Hello World"       
-      
+
+ hello-world-3:
+  resource_spec: 2xlarge
+  runner: AWS-runner
+  depends:
+   - hello-world
+  current_working_directory: ~/
+  steps:
+   - run:
+      name: Say Hello World
+      command: echo "Hello World"      
+
+ hello-world-4:
+  resource_spec: 2xlarge
+  runner: AWS-runner
+  depends:
+   - hello-world
+  current_working_directory: ~/
+  steps:
+   - run:
+      name: Say Hello World
+      command: echo "Hello World"      
+
+ hello-world-5:
+  resource_spec: 2xlarge
+  runner: AWS-runner
+  depends:
+   - hello-world
+  current_working_directory: ~/
+  steps:
+   - run:
+      name: Say Hello World
+      command: echo "Hello World"      
+
+
 workflows:
  hello-world-workflow:
   triggers:
@@ -155,3 +189,6 @@ workflows:
   jobs:
    - hello-world
    - hello-world-2
+   - hello-world-3
+   - hello-world-4
+   - hello-world-5
