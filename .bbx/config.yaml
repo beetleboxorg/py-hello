@@ -136,7 +136,7 @@ jobs:
 
 
  hello-world-2:
-  resource_spec: micro
+  resource_spec: 2xlarge
   runner: AWS-runner
   depends:
    - hello-world
