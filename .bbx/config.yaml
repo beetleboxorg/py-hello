@@ -5,7 +5,7 @@
 runners:
  ubuntu-runner:
   # image: stag:5000/non-existent-image #=-
-  image: ubuntu #=-
+  image: ubuntu #=
 
 # Define a job to be performed during a workflow
 jobs:   
